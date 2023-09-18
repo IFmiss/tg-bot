@@ -10,8 +10,8 @@ function App() {
     Telegram.WebApp.MainButton.text = 'Continue';
     Telegram.WebApp.MainButton.isVisible = true;
     Telegram.WebApp.MainButton.onClick(() => {
-      Telegram.WebApp.showConfirm('Are you confirm', () => {
-        Telegram.WebApp.close()
+      Telegram.WebApp.showConfirm('Are you confirm', (ok: boolean) => {
+        ok && Telegram.WebApp.close()
       })
     })
   }, [])
