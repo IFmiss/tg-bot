@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="Hi_DE_Bot" data-size="small" data-auth-url="https://tg-bot-jet.vercel.app" data-request-access="write"></script>
     <App />
   </React.StrictMode>
 );
