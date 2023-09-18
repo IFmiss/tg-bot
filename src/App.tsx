@@ -8,6 +8,7 @@ function App() {
     Telegram.WebApp.MainButton.color = '#57ca3a';
     Telegram.WebApp.MainButton.textColor = '#0d1e08';
     Telegram.WebApp.MainButton.text = 'Continue';
+    Telegram.WebApp.MainButton.isVisible = true;
     Telegram.WebApp.MainButton.onClick(() => {
       Telegram.WebApp.showConfirm('Are you confirm', () => {
         Telegram.WebApp.close()
